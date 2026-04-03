@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | YIELDED GENERATION</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- LEFT SIDE IMAGE -->
+    <div class="side-image left-side">
+      <img src="Images/Side Cover.jpeg" alt="Church Left Side" id="leftImage" />
+    </div>
+
+    <!-- RIGHT SIDE IMAGE -->
+    <div class="side-image right-side">
+      <img
+        src="Images/Side Cover.jpeg"
+        alt="Church Right Side"
+        id="rightImage"
+      />
+    </div>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <div class="main-wrapper">
+
+    <header>
+      <div class="header-flex">
+        <div class="logo-container">
+          <img src="Images/Logo.jpg" alt="YIELDED GENERATION Logo" class="logo" />
+          <div>
+            <h1>YIELDED GENERATION</h1>
+            <p class="tagline">Fellowship • Purpose • Missions</p>
+          </div>
+        </div>
+
+        <!-- Search Bar - Top Right -->
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="Search sermons, events, topics..."
+            autocomplete="off"
+          />
+          <button class="search-button" id="searchButton">🔍</button>
+        </div>
+
+        <button id="force-hide-menu" class="mobile-menu-btn">☰</button>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <h1>Our Gallery</h1>
+        <p>Capturing moments of worship, fellowship, and community impact</p>
+      </section>
+
+      <!-- Category Filters -->
+      <section class="gallery-filters">
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">
+            All Photos
+          </button>
+          <button class="filter-btn" data-filter="worship">Worship</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+          <button class="filter-btn" data-filter="community">Community</button>
+          <button class="filter-btn" data-filter="youth">Youth</button>
+          <button class="filter-btn" data-filter="outreach">Outreach</button>
+        </div>
+      </section>
+
+      <!-- Photo Gallery Grid -->
+      <section class="gallery-grid-section">
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Worship Category -->
+          <div class="gallery-item" data-category="worship">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Sunday Worship.jpeg"
+                alt="Worship Service"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Worship</span>
+                <h3>Sunday Worship</h3>
+                <p>Powerful worship during Sunday service</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Worship Team.jpeg"
+                alt="Worship Team"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Worship</span>
+                <h3>Worship Team</h3>
+                <p>Our talented worship team leading praise</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/prayer.jpg"
+                alt="Prayer Moment"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Worship</span>
+                <h3>Prayer & Intercession</h3>
+                <p>Lifting our voices in prayer</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Events Category -->
+          <div class="gallery-item" data-category="events">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Event.jpg"
+                alt="Church Event"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Events</span>
+                <h3>Annual Conference</h3>
+                <p>2024 YIELDED Conference</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Chrismas celebration.jpg"
+                alt="Christmas Celebration"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Events</span>
+                <h3>Christmas Celebration</h3>
+                <p>Joyful celebration of Christ's birth</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Baptism.jpg"
+                alt="Baptism Service"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Events</span>
+                <h3>Baptism Service</h3>
+                <p>Celebrating new life in Christ</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Community Category -->
+          <div class="gallery-item" data-category="community">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Fellowship Lunch.JPG"
+                alt="Fellowship"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Community</span>
+                <h3>Fellowship Lunch</h3>
+                <p>Building community through shared meals</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="community">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Life Group.jpg"
+                alt="Life Group"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Community</span>
+                <h3>Life Groups</h3>
+                <p>Growing together in small groups</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="community">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Family Gathering.jpg"
+                alt="Family Gathering"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Community</span>
+                <h3>Family Gathering</h3>
+                <p>Multi-generational fellowship</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Youth Category -->
+          <div class="gallery-item" data-category="youth">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Youth Service.jpeg"
+                alt="Youth Service"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Youth</span>
+                <h3>Youth Ignite</h3>
+                <p>High-energy youth service</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="youth">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Youth Camp.jpg"
+                alt="Youth Camp"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Youth</span>
+                <h3>Summer Camp</h3>
+                <p>Memorable moments at camp</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="youth">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Youth Game.jpg"
+                alt="Youth Games"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Youth</span>
+                <h3>Youth Games Night</h3>
+                <p>Fun and fellowship</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outreach Category -->
+          <div class="gallery-item" data-category="outreach">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Food Distribution.jpg"
+                alt="Food Distribution"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Outreach</span>
+                <h3>Food Distribution</h3>
+                <p>Serving our community</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="outreach">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Medical Outreach.jpg"
+                alt="Medical Outreach"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Outreach</span>
+                <h3>Medical Outreach</h3>
+                <p>Free health screening</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="outreach">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/School supply drive.jpg"
+                alt="School Supply Drive"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Outreach</span>
+                <h3>School Supply Drive</h3>
+                <p>Supporting local students</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Worship Photos -->
+          <div class="gallery-item" data-category="worship">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Sunday Prayer.jpeg"
+                alt="Sunday Prayer"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Worship</span>
+                <h3>Sunrise Prayer</h3>
+                <p>Early morning prayer gathering</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Easter Service.png"
+                alt="Easter Service"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Events</span>
+                <h3>Easter Celebration</h3>
+                <p>He is risen!</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="community">
+            <div class="gallery-image-wrapper">
+              <img
+                src="Images/Women Fellowship.jpg"
+                alt="Women's Fellowship"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-category">Community</span>
+                <h3>Women's Fellowship</h3>
+                <p>Sisters in Christ</p>
+                <span class="gallery-icon">🔍</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal (for full-size image viewing) -->
+      <div id="lightboxModal" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightboxImage" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+
+      <!-- Upload Your Photos Section -->
+      <section class="upload-section">
+        <h2>Share Your Moments</h2>
+        <p>Have photos from our services or events? We'd love to see them!</p>
+        <div class="upload-container">
+          <div class="upload-card">
+            <div class="upload-icon">📸</div>
+            <h3>Submit Your Photos</h3>
+            <p>Share your YIELDED GENERATION moments with our community</p>
+            <button class="btn btn-primary" id="uploadBtn">
+              Submit Photos
+            </button>
+          </div>
+          <div class="upload-card">
+            <div class="upload-icon">🏷️</div>
+            <h3>Tag Us on Social Media</h3>
+            <p>Use <strong>#YieldedGeneration</strong> to be featured</p>
+            <div class="social-tags">
+              <a href="#" class="social-tag">Instagram</a>
+              <a href="#" class="social-tag">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 YIELDED GENERATION. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
